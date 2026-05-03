@@ -8,7 +8,7 @@ import { ProviderConfig, Env } from '../types';
 export function createProvider(config: ProviderConfig, env: Env): AIProvider {
   switch (config.provider) {
     case 'anthropic':
-      return new AnthropicProvider(config.model);
+      return new AnthropicProvider(config.model, config.baseUrl);
 
     case 'google':
       return new GoogleProvider(config.model, undefined, config.grounding);
