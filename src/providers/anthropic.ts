@@ -8,7 +8,7 @@ export class AnthropicProvider extends BaseProvider {
     try {
       const client = new Anthropic({
         apiKey,
-        baseURL: this.baseUrl
+        baseURL: this.baseUrl,
       });
 
       const { system, messages } = this.convertMessages(request.messages);
