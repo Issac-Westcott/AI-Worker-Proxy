@@ -1,6 +1,7 @@
 name = "ai-worker-proxy"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
+workers_dev = true
 
 # Cloudflare AI binding (optional)
 [ai]
